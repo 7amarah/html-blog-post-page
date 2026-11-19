@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO Meta Tags -->
+    <title>Why Semantic HTML Matters | MyBlog</title>
+    <meta name="description"
+        content="Learn what semantic HTML is, how it improves accessibility, search engine optimization and maintainability, and how to use the right tags for your content.">
+    <link rel="canonical" href="https://7amarah.github.io/html-blog-post-page/">
+    <meta name="author" content="Tamarabrakaemi Waritimi">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Why Semantic HTML Matters">
+    <meta property="og:description"
+        content="Learn what semantic HTML is, how it improves accessibility, search engine optimization and maintainability, and how to use the right tags for your content.">
+    <meta property="og:url" content="https://7amarah.github.io/html-blog-post-page/">
+    <meta property="og:image" content="https://7amarah.github.io/html-blog-post-page/og-image.png">
+    <meta property="og:image:alt"
+        content="Mountains at sunrise, the cover image for the post Why Semantic HTML Matters">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="MyBlog">
+    <meta property="og:locale" content="en_NG">
+    <meta property="article:published_time" content="2026-05-20">
+    <meta property="article:author" content="Tamarabrakaemi Waritimi">
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Why Semantic HTML Matters">
+    <meta name="twitter:description"
+        content="Learn what semantic HTML is, how it improves accessibility, search engine optimization and maintainability, and how to use the right tags for your content.">
+    <meta name="twitter:image" content="https://7amarah.github.io/html-blog-post-page/og-image.png">
+    <meta name="twitter:image:alt"
+        content="Mountains at sunrise, the cover image for the post Why Semantic HTML Matters">
+
+    <!-- Favicons -->
+    <link rel="icon" href="./favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="manifest" href="./site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <p><strong>MyBlog</strong></p>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#post">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="post">
+            <h1>Why Semantic HTML Matters</h1>
+            <p>Published on <time datetime="2026-05-20">May 20, 2026</time> by Tamarah Waritimi.</p>
+
+            <p>Semantic HTML means choosing the tag that matches the <em>meaning</em> of your content, not the way it
+                looks. It improves accessibility and search engine optimization (SEO), and it makes your code easier
+                to maintain.</p>
+
+            <section>
+                <h2>What Semantic HTML Means</h2>
+                <p>A <code>&lt;div&gt;</code> tells the browser nothing about its contents, but a
+                    <code>&lt;nav&gt;</code> tells it that the contents are navigation links. Browsers, screen readers
+                    and search engines all use that meaning to understand your page.
+                </p>
+                <p><strong>Choose tags for what the content is, not for how it should look.</strong> Appearance
+                    belongs to CSS.</p>
+            </section>
+
+            <section>
+                <h2>Benefits</h2>
+                <p>Using semantic HTML helps you in three main ways.</p>
+
+                <h3>Accessibility</h3>
+                <p>Screen readers use headings, landmarks and lists to let people jump around a page instead of
+                    listening to it from top to bottom.</p>
+
+                <h3>Search Engine Optimization</h3>
+                <p>Search engines rely on clear structure to work out what a page is about and which parts matter
+                    most.</p>
+
+                <h3>Maintainability</h3>
+                <p>Meaningful tags make the code easier to read, so you and your teammates can find and change things
+                    faster.</p>
+            </section>
+
+            <section>
+                <h2>Examples</h2>
+
+                <h3>Page Regions</h3>
+                <p>A typical blog post page is built from these regions:</p>
+                <ol>
+                    <li><code>&lt;header&gt;</code> for the site name and primary navigation.</li>
+                    <li><code>&lt;main&gt;</code> for the dominant content of the page.</li>
+                    <li><code>&lt;article&gt;</code> for the self-contained blog post.</li>
+                    <li><code>&lt;footer&gt;</code> for closing content such as the copyright notice.</li>
+                </ol>
+
+                <figure>
+                    <img src="./mountains-at-sunrise-view.jpg"
+                        alt="Mountain peaks glowing in the first light of sunrise" width="600" height="400">
+                    <figcaption>Mountains at sunrise</figcaption>
+                </figure>
+
+                <blockquote cite="https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element">
+                    <p>The main element represents the dominant contents of the document.</p>
+                    <footer>
+                        <p>&mdash; <cite>HTML Living Standard</cite></p>
+                    </footer>
+                </blockquote>
+
+                <h3>Code Sample</h3>
+                <p>Use the <code>&lt;code&gt;</code> element for inline code, like <code>&lt;main&gt;</code>. For a
+                    block of code, wrap <code>&lt;code&gt;</code> in <code>&lt;pre&gt;</code> to keep the
+                    formatting:</p>
+                <pre><code>
+                    &lt;main&gt;
+                        &lt;article&gt;
+                            &lt;h1&gt;Why Semantic HTML Matters&lt;/h1&gt;
+                            &lt;p&gt;Semantic HTML makes the web better for everyone.&lt;/p&gt;
+                        &lt;/article&gt;
+                    &lt;/main&gt;</code></pre>
+            </section>
+
+            <section>
+                <h2>Learn More</h2>
+                <ul>
+                    <li>Read the <a href="https://html.spec.whatwg.org/dev/introduction.html">introduction to the HTML
+                            Living Standard</a> for the official definition of the language.</li>
+                    <li>See the <a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics">MDN Web Docs
+                            glossary entry on semantics in HTML</a> for a beginner-friendly explanation.</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p><small>&copy; 2026 MyBlog. All rights reserved.</small></p>
+    </footer>
+</body>
+
+</html>
